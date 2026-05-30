@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-marble: var(--font-marble), sans-serif;
+  --font-cottorway: var(--font-cottorway), sans-serif;
+
+  --color-soft-white: #f9f9f9;
+  --color-primary: #2bb500;
+}
+
