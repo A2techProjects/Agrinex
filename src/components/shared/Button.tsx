@@ -1,18 +1,23 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps {
   className?: string;
+  href?: string;
   children?: React.ReactNode;
 }
 
 const Button: React.FC<ButtonProps> = ({
   className = '',
   children,
+  href = "#",
   ...props
 }) => {
+  
   return (
-    <button
+    <Link
+      href={href}
       className={`
         inline-flex items-center justify-between
         text-black
@@ -32,7 +37,7 @@ const Button: React.FC<ButtonProps> = ({
       <span className="flex items-center justify-center bg-primary text-black size-8 md:size-12 ml-6 m-0.5 rounded-full transition-transform duration-200 flex-shrink-0">
         <ArrowRight className="size-4 md:size-8 stroke-[2]" />
       </span>
-    </button>
+    </Link>
   );
 };
 

@@ -92,9 +92,9 @@ export default function Navbar() {
           </ul>
 
           <div className="hidden xl:flex">
-            <button className="px-6 py-2 rounded-full bg-white text-black uppercase">
+            <Link href="/login" className="px-6 py-2 rounded-full text-center bg-white text-black uppercase">
               Login
-            </button>
+            </Link>
           </div>
 
           <button
@@ -154,9 +154,9 @@ export default function Navbar() {
               ))}
             </div>
 
-            <button className="px-4 py-2 rounded-full bg-white text-black">
+            <Link href="/login" className="px-6 py-2 rounded-full text-center bg-white text-black uppercase">
               Login
-            </button>
+            </Link>
           </div>
         </div>
       </div>
